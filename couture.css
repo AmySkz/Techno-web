@@ -1,0 +1,41 @@
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    background-color: #54DFFE;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+.nav-item img{
+    height: 45px;
+}
+
+.navbar-nav:last-child {
+    margin-left: auto;
+}
+
+
+/* CSS rule for pseudo-element applied to nav links */
+.navbar-nav .nav-item a {
+    position: relative;
+}
+
+.navbar-nav .nav-item a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust this value to position the line */
+    left: 0;
+    width: 100%; /* Extend the line to cover the width of the link */
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Add transition effect */
+    opacity: 0; /* Initially hide the line */
+}
+
+.navbar-nav .nav-item a:hover::after {
+    opacity: 1; /* Show the line on hover */
+}
+
