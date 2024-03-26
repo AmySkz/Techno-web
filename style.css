@@ -1,0 +1,44 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #FFC300;
+}
+
+.services, .testimonials {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.testimonials p {
+    font-style: italic;
+}
+
+/* Header styles */
+header {
+    background-color: #54DFFE;
+    padding: 10px 0;
+    text-align: center;
+    color: #FFF;
+}
+
+header h1 {
+    font-size: 24px;
+}

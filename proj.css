@@ -1,0 +1,213 @@
+
+
+/* clear page inside and outside margins for ell elements */
+
+body {
+    font-family: 'Playfair Display', sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+section{
+    padding: 4.5rem 0 1.5rem;
+}
+img{
+    width: 100%;
+}
+header{
+    position : fixed;
+    width : 100% ;
+    top : 0 ;
+    right : 0;
+    z-index :1000;
+    display : flex ;
+    align-items : center;
+    justify-content : space-between;
+    background : var(--light-orange) ;
+    box-shadow : 0 8px 11px --orange-color ; 
+    padding : 20px 100px;
+    transition : 0.5s;
+}
+#logo img{
+    width : 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.navbar{
+    display: flex;
+    column-gap: 5rem;
+}
+.navbar a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--dark-text);
+    padding: 0.5rem 1rem;
+}
+.navbar a:hover,
+.navbar .home-active{
+    background: var(--orange-color);
+    border-radius: 5rem;
+    color: var(--light-text);
+    transition: background 0.5s; 
+}
+#menu{
+    color: var(--orange-color);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+.cart img{
+    width : 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+}
+
+h1{
+    padding : 8px;
+    background-color: #FFC300;
+    border-radius: 8px;
+    margin: 0;
+    font-size: 64px;
+    font-family: 'Lilita One',sans-serif;
+}
+
+.container{
+    position: relative ;
+    width : 100%;
+    min-height: 640px;
+    display : flex;
+    align-items: center;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container img{
+    width: 1200px;
+    position: absolute;
+    bottom : -500px;
+    right: 0;
+}
+/*
+p{
+    line-height: 1.5;
+
+}
+
+
+input,
+textarea{
+    height : 32px;
+    padding :0 16px;
+    font-family: 'Lilita One',sans-serif;
+    font-size: 20px ;
+    border: none;
+    box-shadow: inset 8px 3px 18px -4px #FFC300;
+}
+
+#accueil{
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content:center ;
+    flex-direction: column;
+    background-color: #54DFFE ;
+    background-image: url('img/5.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: white;
+}
+#accueil h3{
+    background-color: black;
+    border-radius: 8px;
+    padding: 0 24px;
+    font-size: 24px;
+}
+
+#searchbox{
+    position: fixed;
+    right:0;
+    top:24px;
+    width:500px;
+    pointer-events:none;
+    z-index: 50;
+    transition: 0.4s;
+}
+
+#searchbox input{
+    height: 48px;
+    width: 100%
+}
+
+*/
+
+
+
+
+
+footer {
+    background-color: #222222;
+}
+
+footer a {
+    text-decoration: none;
+    color: #999;
+    font-size: 0.8rem;
+}
+
+footer h5 {
+    color: #D8D8D8;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+footer li {
+    padding-bottom: 4px;
+}
+
+footer li a {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+footer li a:hover {
+    color: #D8D8D8;
+}
+
+footer p {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+footer .copyright a {
+    color: black;
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px;
+}
+
+footer .copyright a:hover {
+    color: var(--light-text);
+    background-color: var(--orange-color);
+}
+
+
+:root{
+    --light-orange: rgb(241, 231, 212);
+    --orange-color:#fb774b;
+    --bleu-color :#54DFFE;
+    --dark-text :black ;
+    --light-text : white;
+}
